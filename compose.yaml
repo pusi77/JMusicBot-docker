@@ -1,0 +1,8 @@
+version: '3'
+services:
+  jmusicbot:
+    container_name: jmusicbot
+    image: ghcr.io/pusi77/jmusicbot:latest
+    volumes:
+      - ./config.txt:/app/config.txt
+    restart: unless-stopped
