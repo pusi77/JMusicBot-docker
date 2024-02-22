@@ -21,7 +21,7 @@ jobs:
 
       - name: Log in to registry
         run: echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u $ --password-stdin
-        #
+
       - name: Push image
         run: |
           IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
